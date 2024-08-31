@@ -1,0 +1,46 @@
+body{
+    font-family:'lato',sans-serif;
+    display:flex;
+    justify-content:center;
+    background-image: url(./cloud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.srh{
+    display:flex;
+    margin-top:11px;
+}
+input{
+    width:200px;
+    padding:16px;
+    border-radius: 16px;
+    height:18px;
+    
+
+}
+button{
+    width:70px;
+    height:35px;
+    background-color: rgb(136, 204, 209);
+    border-radius: 4px;
+    margin-inline: 9px;
+    margin-top: 2px;
+}
+::placeholder{
+    color: rgb(31, 28, 28);
+}
+#city{
+    margin-top: 33px;
+    font-size: 33px;
+}
+.container{
+    width:300px;
+    padding:22px;
+    text-align:center;
+    border-radius:5px;
+    margin-top:2%;
+    background-color:#859197;
+    margin-top: 10%;
+}

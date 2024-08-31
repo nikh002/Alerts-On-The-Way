@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Alert System</title>
+    <!-- Link to Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Link to Custom CSS -->
+    <link rel="stylesheet" href="stylesz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Community Alert System</h1>
+
+        <!-- Form to Add an Alert -->
+        <form id="alertForm">
+            <label for="alertType">Alert Type:</label>
+            <select id="alertType" required>
+                <option value="Traffic">Traffic</option>
+                <option value="Weather">Weather</option>
+                <option value="Accident">Accident</option>
+            </select>
+
+            <label for="alertDescription">Description:</label>
+            <textarea id="alertDescription" placeholder="Describe the issue..." required></textarea>
+
+            <button type="submit">Add Alert</button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="successMessage">Alert added successfully!</div>
+
+        <!-- Section to Display Map -->
+        <div id="map"></div>
+    </div>
+
+    <!-- Link to Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Link to Custom JavaScript -->
+    <script src="scriptz.js"></script>
+</body>
+</html>

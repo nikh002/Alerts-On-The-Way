@@ -3,32 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Safety Information</title>
+    <style>
+        body {
+            background-color: #FFA07A;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #FFF5EE;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .safety-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .custom-button {
+            background-color: #FF6347;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #FF4500;
+        }
+
+        .custom-button:active {
+            background-color: #CD3700;
+        }
+
+        .custom-button:focus {
+            outline: none;
+            box-shadow: 0 0 5px #FF4500;
+        }
+
+        a h2 {
+            margin: 0; 
+        }
+
+        section {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<style>
-    p{
-        padding: 20px;
-        text-align: center;
-    
-    }
-    h2{
-        text-align: center;
-    } body{
-        background-color: rgb(255, 160, 122);
-    }
-</style>
 <body>
-    <h2>What actual our website do</h2>
-    <section>
-        <p>
-            <span>We allow user to share the local area information such as Weather Traffic Safety <br>
-                We will be providing the feature for user to share the data or the information around himself/herself. <br>
-                To save your valuable time we will be providing you the platform to get help and also give chance to help others. <br>
-                We have several feature for your saftey purpose only,that is sharing the alerts to local autorities such as police station and the hospital near you.
-            </span>
-        </p> <center><img src="police.jpg" alt="" width="500px"></center>
-    
-    </section> <a href="weather.html"><h2> <button>Let's have a look on Weather</button></h2></a> <br>
-    <a href="alerts.html"><h2> <button>Let's have a look on Traffic</button></h2></a>
+    <div class="container">
+        <p class="info-text">
+            We allow users to share local area information such as Weather, Traffic, and Safety. 
+            We will be providing features for users to share data or information around themselves.
+            To save your valuable time, we will provide you with a platform to get help and also give you a chance to help others.
+            We have several features for your safety purpose only, such as sharing alerts to local authorities like police stations and the hospital near you.
+        </p>
+        <img src="Safety-image.jpg" alt="Safety Image" class="safety-image">
+
+        <section>
+            <a href="weather.html"><h2><button class="custom-button">Let's have a look on Weather</button></h2></a> 
+            <br>
+            <a href="alerts.html"><h2><button class="custom-button">Let's have a look on Traffic</button></h2></a>
+        </section>
+    </div>
 </body>
 </html>
